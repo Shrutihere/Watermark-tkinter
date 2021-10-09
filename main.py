@@ -73,21 +73,21 @@ def openfilename():
 
 window = Tk()
 window.title("Water Marking App")
-window.config(padx=100, pady= 100, bg="#fff5b7" )
+window.config(padx=100, pady= 100, bg="#F3D5C0" )
 window.geometry("1500x1000")
 
 
-title = Label(window, text="Add Custom Watermarks To Your Photos\n(Use up, down, left, right arrows to place the logo)", font = "Courier 30", bg="#fff5b7", padx=60, pady=30)
+title = Label(window, text="Add Custom Watermarks To Your Photos\n(Use up, down, left, right arrows to place the logo)", font = "Courier 30", bg="#F3D5C0", padx=60, pady=30)
 title.grid(row=1, column=1, columnspan=3)
 
 
-btn1 = Button(window, text ='Choose Images', command = openfilename, font= "Times 20", bg="#DAF7f9")
+btn1 = Button(window, text ='Choose Images', command = openfilename, font= "Times 20", bg="#506D84")
 btn1.grid(row = 2, column = 1, columnspan=1)
 
-btn2 = Button(window, text ='Choose Logo', command = logo, font= "Times 20", bg="#DAF7f9")
+btn2 = Button(window, text ='Choose Logo', command = logo, font= "Times 20", bg="#506D84")
 btn2.grid(row = 2, column = 2, columnspan=1)
 
-save_btn = Button(window, text ='Save', command = save, font= "Times 20", bg="#DAF7f9")
+save_btn = Button(window, text ='Save', command = save, font= "Times 20", bg="#506D84")
 save_btn.grid(row = 2, column = 3, columnspan=1)
 
 window.bind('<Up>', up)
